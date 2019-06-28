@@ -11,12 +11,12 @@ var user = new User({
 });
 
 var user2 = new User({
-    name:'Miguel Garcia',
-    email:'miangarciago@ittepic.edu.mx'
+    name:'Adrian Magaña',
+    email:'admaganaor@ittepic.edu.mx'
 });
 
 var user3 = new User({
-    name:'Juan perez',
+    name:'toro perez',
     email:'juan@perez.com'
 });
 
@@ -59,7 +59,7 @@ User.find({},function(error,docs){
 });
 
 //busqueda con restriccion
-User.find({email:'miangarciago@ittepic.edu.mx'},
+User.find({email:'admaganaor@ittepic.edu.mx'},
 function(error,docs){
     if(error){
         console.log(error);
@@ -70,7 +70,7 @@ function(error,docs){
 });
 
 //actualizacion
-User.update({_id: '5d1563add25de13280b1db6b'},{$set: {email:'secambio@ittepic.edu'}},
+User.update({_id: '5d1563add25de13280b1db6b'},{$set: {email:'actualizacion@ittepic.edu'}},
 function(error,docs){
     if(error){
         console.log(error);
